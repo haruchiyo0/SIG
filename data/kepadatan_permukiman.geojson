@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kecamatan": "Kedaton",
+        "kepadatan_per_km2": 9000,
+        "kelas_kepadatan": "Tinggi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.249,
+              -5.373
+            ],
+            [
+              105.276,
+              -5.374
+            ],
+            [
+              105.279,
+              -5.399
+            ],
+            [
+              105.25,
+              -5.405
+            ],
+            [
+              105.238,
+              -5.39
+            ],
+            [
+              105.249,
+              -5.373
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kecamatan": "Teluk Betung Selatan",
+        "kepadatan_per_km2": 7600,
+        "kelas_kepadatan": "Tinggi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.248,
+              -5.43
+            ],
+            [
+              105.285,
+              -5.432
+            ],
+            [
+              105.29,
+              -5.462
+            ],
+            [
+              105.253,
+              -5.468
+            ],
+            [
+              105.236,
+              -5.447
+            ],
+            [
+              105.248,
+              -5.43
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kecamatan": "Rajabasa",
+        "kepadatan_per_km2": 4200,
+        "kelas_kepadatan": "Sedang"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.22,
+              -5.346
+            ],
+            [
+              105.255,
+              -5.35
+            ],
+            [
+              105.258,
+              -5.38
+            ],
+            [
+              105.225,
+              -5.385
+            ],
+            [
+              105.21,
+              -5.363
+            ],
+            [
+              105.22,
+              -5.346
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

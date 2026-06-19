@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Aliran Drainase Rajabasa-Kedaton",
+        "kondisi": "Berpotensi meluap saat hujan tinggi"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.225,
+            -5.35
+          ],
+          [
+            105.238,
+            -5.365
+          ],
+          [
+            105.25,
+            -5.382
+          ],
+          [
+            105.264,
+            -5.398
+          ],
+          [
+            105.277,
+            -5.41
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Aliran Teluk Betung",
+        "kondisi": "Dekat permukiman padat"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.24,
+            -5.43
+          ],
+          [
+            105.25,
+            -5.438
+          ],
+          [
+            105.262,
+            -5.448
+          ],
+          [
+            105.275,
+            -5.458
+          ]
+        ]
+      }
+    }
+  ]
+}

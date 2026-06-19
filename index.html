@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGMA Flood | Web GIS Evakuasi Banjir</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>SIGMA Flood</h1>
+        <p>Sistem Informasi Geografis Mitigasi Banjir Kota Bandar Lampung</p>
+      </div>
+      <div class="header-actions">
+        <span class="badge danger">Status: Siaga</span>
+        <span class="badge">Prototype Web GIS</span>
+      </div>
+    </header>
+    <main class="layout">
+      <aside class="sidebar">
+        <h2>Kontrol Peta</h2>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Cari lokasi, contoh: Kedaton" />
+          <button id="searchBtn">Cari</button>
+        </div>
+        <section class="panel">
+          <h3>Layer Peta</h3>
+          <label><input type="checkbox" checked id="toggleGenangan" /><span class="dot blue"></span>Genangan Banjir</label>
+          <label><input type="checkbox" checked id="togglePermukiman" /><span class="dot orange"></span>Kepadatan Permukiman</label>
+          <label><input type="checkbox" checked id="toggleRute" /><span class="dot green"></span>Rute Evakuasi</label>
+          <label><input type="checkbox" checked id="toggleKorban" /><span class="dot red"></span>Titik Korban</label>
+          <label><input type="checkbox" checked id="toggleAlat" /><span class="dot yellow"></span>Alat Berat</label>
+          <label><input type="checkbox" checked id="toggleSungai" /><span class="line blue-line"></span>Sungai/Drainase</label>
+        </section>
+        <section class="panel">
+          <h3>Filter Rute</h3>
+          <button class="filter-btn active" data-filter="all">Semua Rute</button>
+          <button class="filter-btn" data-filter="aman">Rute Aman</button>
+          <button class="filter-btn" data-filter="terbatas">Rute Terbatas</button>
+          <button class="filter-btn" data-filter="tertutup">Rute Tertutup</button>
+        </section>
+        <section class="panel">
+          <h3>Legenda</h3>
+          <p><span class="legend blue"></span> Area genangan banjir</p>
+          <p><span class="legend orange"></span> Permukiman padat</p>
+          <p><span class="legend green"></span> Rute aman</p>
+          <p><span class="legend yellow"></span> Alat berat tersedia</p>
+          <p><span class="legend red"></span> Korban terisolir</p>
+        </section>
+      </aside>
+      <section class="map-area"><div id="map"></div></section>
+      <aside class="summary">
+        <h2>Ringkasan Operasi</h2>
+        <div class="stat-card"><span class="stat-icon red"></span><div><strong id="totalKorban">0</strong><p>Korban prioritas</p></div></div>
+        <div class="stat-card"><span class="stat-icon green"></span><div><strong id="totalRuteAman">0</strong><p>Rute aman</p></div></div>
+        <div class="stat-card"><span class="stat-icon yellow"></span><div><strong id="totalAlat">0</strong><p>Alat berat siap</p></div></div>
+        <section class="panel white"><h3>Prioritas Evakuasi</h3><div id="priorityList"></div></section>
+        <section class="panel white"><h3>Catatan Data</h3><p class="small-text">Data titik korban, alat berat, dan rute evakuasi pada prototype ini merupakan data simulasi. Data jalan/sungai dapat diganti dari OpenStreetMap, sedangkan bahaya banjir dapat diganti dari InaRISK.</p></section>
+      </aside>
+    </main>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

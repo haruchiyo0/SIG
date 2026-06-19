@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "jenis": "Excavator",
+        "jumlah": 2,
+        "status": "Tersedia",
+        "posko": "Posko Teluk Betung",
+        "kontak": "08xx-xxxx-0001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.276,
+          -5.438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "jenis": "Dump Truck",
+        "jumlah": 3,
+        "status": "Tersedia",
+        "posko": "Posko Rajabasa",
+        "kontak": "08xx-xxxx-0002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.232,
+          -5.358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "jenis": "Perahu Karet",
+        "jumlah": 4,
+        "status": "Tersedia",
+        "posko": "Posko Kedaton",
+        "kontak": "08xx-xxxx-0003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.267,
+          -5.391
+        ]
+      }
+    }
+  ]
+}

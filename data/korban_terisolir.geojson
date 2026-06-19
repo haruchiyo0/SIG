@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "lokasi": "Pesawahan",
+        "kecamatan": "Teluk Betung Selatan",
+        "jumlah_korban": 12,
+        "genangan_cm": 80,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Perahu karet dan evakuasi lansia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.262,
+          -5.446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "lokasi": "Kedaton",
+        "kecamatan": "Kedaton",
+        "jumlah_korban": 7,
+        "genangan_cm": 60,
+        "prioritas": "Sedang",
+        "kebutuhan": "Bantuan logistik dan kendaraan tinggi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.2588,
+          -5.3821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "lokasi": "Rajabasa",
+        "kecamatan": "Rajabasa",
+        "jumlah_korban": 3,
+        "genangan_cm": 40,
+        "prioritas": "Sedang",
+        "kebutuhan": "Monitoring dan bantuan logistik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.2401,
+          -5.3642
+        ]
+      }
+    }
+  ]
+}

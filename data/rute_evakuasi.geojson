@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_rute": "Rute Aman Rajabasa - Posko Kedaton",
+        "status": "aman",
+        "estimasi_menit": 14,
+        "catatan": "Dapat dilalui kendaraan relawan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.235,
+            -5.362
+          ],
+          [
+            105.242,
+            -5.372
+          ],
+          [
+            105.251,
+            -5.382
+          ],
+          [
+            105.26,
+            -5.39
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_rute": "Rute Kedaton - Way Halim",
+        "status": "terbatas",
+        "estimasi_menit": 20,
+        "catatan": "Ada genangan sedang, disarankan kendaraan tinggi"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.258,
+            -5.388
+          ],
+          [
+            105.271,
+            -5.392
+          ],
+          [
+            105.285,
+            -5.397
+          ],
+          [
+            105.295,
+            -5.402
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_rute": "Rute Teluk Betung Selatan",
+        "status": "aman",
+        "estimasi_menit": 18,
+        "catatan": "Jalur alternatif menuju posko terdekat"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.256,
+            -5.452
+          ],
+          [
+            105.265,
+            -5.446
+          ],
+          [
+            105.275,
+            -5.439
+          ],
+          [
+            105.285,
+            -5.432
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama_rute": "Rute Pesisir Terdampak",
+        "status": "tertutup",
+        "estimasi_menit": 0,
+        "catatan": "Tidak dapat dilewati karena genangan tinggi"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.242,
+            -5.448
+          ],
+          [
+            105.252,
+            -5.455
+          ],
+          [
+            105.268,
+            -5.46
+          ],
+          [
+            105.28,
+            -5.462
+          ]
+        ]
+      }
+    }
+  ]
+}
