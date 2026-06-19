@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "name": "posko_evakuasi_indikatif",
+  "metadata": {
+    "status_data": "Indikatif / prototype",
+    "catatan": "Posko dibuat dari lokasi sarana evakuasi dan alat berat. Kapasitas adalah estimasi untuk kebutuhan prototype, bukan data resmi.",
+    "tanggal_penyusunan": "2026-06-19"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id_posko": "PS-001",
+        "nama_posko": "Posko Bumi Waras",
+        "status": "Aktif",
+        "kapasitas_orang": 140,
+        "fasilitas": "Pompa Air Portable",
+        "wilayah_layanan": "Bumi Waras, Panjang, Teluk Betung Selatan",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Diturunkan dari alat_berat.geojson untuk prototype; lokasi/kapasitas perlu verifikasi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.289,
+          -5.445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_posko": "PS-002",
+        "nama_posko": "Posko Kedaton",
+        "status": "Aktif",
+        "kapasitas_orang": 128,
+        "fasilitas": "Perahu Karet",
+        "wilayah_layanan": "Kedaton, Labuhan Ratu, Way Halim",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Diturunkan dari alat_berat.geojson untuk prototype; lokasi/kapasitas perlu verifikasi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.267,
+          -5.391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_posko": "PS-003",
+        "nama_posko": "Posko Panjang",
+        "status": "Aktif",
+        "kapasitas_orang": 92,
+        "fasilitas": "Loader Mini",
+        "wilayah_layanan": "Panjang dan kawasan pesisir terdampak",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Diturunkan dari alat_berat.geojson untuk prototype; lokasi/kapasitas perlu verifikasi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.326,
+          -5.502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_posko": "PS-004",
+        "nama_posko": "Posko Rajabasa",
+        "status": "Aktif",
+        "kapasitas_orang": 116,
+        "fasilitas": "Dump Truck",
+        "wilayah_layanan": "Rajabasa, Tanjung Senang",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Diturunkan dari alat_berat.geojson untuk prototype; lokasi/kapasitas perlu verifikasi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.232,
+          -5.358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_posko": "PS-005",
+        "nama_posko": "Posko Sukarame",
+        "status": "Aktif",
+        "kapasitas_orang": 104,
+        "fasilitas": "Mobil Rescue",
+        "wilayah_layanan": "Kedamaian, Sukabumi, Sukarame",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Diturunkan dari alat_berat.geojson untuk prototype; lokasi/kapasitas perlu verifikasi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.306,
+          -5.393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_posko": "PS-006",
+        "nama_posko": "Posko Teluk Betung",
+        "status": "Aktif",
+        "kapasitas_orang": 104,
+        "fasilitas": "Excavator",
+        "wilayah_layanan": "Bumi Waras, Teluk Betung Selatan, Teluk Betung Timur",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Diturunkan dari alat_berat.geojson untuk prototype; lokasi/kapasitas perlu verifikasi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.276,
+          -5.438
+        ]
+      }
+    }
+  ]
+}

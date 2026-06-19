@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabel Data | SIGMA Flood</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app data-app">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <h1>SIGMA Flood</h1>
+          <p>Tabel data operasional dan layer WebGIS</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a class="nav-link" href="index.html">Peta</a>
+          <a class="nav-link" href="data.html">Data</a>
+          <a class="nav-link" href="metodologi.html">Metodologi</a>
+          <a class="nav-link active" href="tabel.html">Tabel</a>
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="data-page">
+      <section class="data-hero single-hero">
+        <div>
+          <span class="eyebrow">Inventaris Data</span>
+          <h2>Rute, Posko, Genangan, Dan Prioritas</h2>
+          <p>Halaman ini menampilkan tabel ringkas yang bisa dicari untuk mengecek isi data tanpa harus membuka popup peta satu per satu.</p>
+        </div>
+      </section>
+
+      <section class="panel data-panel">
+        <div class="table-heading">
+          <div>
+            <span class="eyebrow">Pencarian</span>
+            <h3>Filter Tabel</h3>
+          </div>
+          <input class="table-search" id="tableSearch" type="search" placeholder="Cari rute, posko, lokasi, atau status" />
+        </div>
+      </section>
+
+      <section class="data-grid">
+        <article class="panel data-panel">
+          <h3>Rute Evakuasi</h3>
+          <div class="table-wrap compact-table">
+            <table class="data-table searchable-table">
+              <thead><tr><th>Rute</th><th>Status</th><th>Jarak</th></tr></thead>
+              <tbody id="routeRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Prioritas Evakuasi</h3>
+          <div class="table-wrap compact-table">
+            <table class="data-table searchable-table">
+              <thead><tr><th>Lokasi</th><th>Prioritas</th><th>Genangan</th></tr></thead>
+              <tbody id="priorityRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Posko Evakuasi</h3>
+          <div class="table-wrap compact-table">
+            <table class="data-table searchable-table">
+              <thead><tr><th>Posko</th><th>Kapasitas</th><th>Fasilitas</th></tr></thead>
+              <tbody id="poskoRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Wilayah Genangan</h3>
+          <div class="table-wrap compact-table">
+            <table class="data-table searchable-table">
+              <thead><tr><th>Lokasi</th><th>Risiko</th><th>Kedalaman</th></tr></thead>
+              <tbody id="floodRows"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <strong>SIGMA Flood</strong>
+      <span>Prototype WebGIS Mitigasi Banjir Kota Bandar Lampung. Data OSM, OSRM, GADM, dan data indikatif; bukan sistem resmi untuk operasi darurat.</span>
+    </footer>
+  </div>
+  <script src="table-page.js"></script>
+</body>
+</html>

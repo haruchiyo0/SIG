@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metodologi | SIGMA Flood</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app data-app">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <h1>SIGMA Flood</h1>
+          <p>Metodologi pengolahan data WebGIS banjir</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a class="nav-link" href="index.html">Peta</a>
+          <a class="nav-link" href="data.html">Data</a>
+          <a class="nav-link active" href="metodologi.html">Metodologi</a>
+          <a class="nav-link" href="tabel.html">Tabel</a>
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="data-page">
+      <section class="data-hero single-hero">
+        <div>
+          <span class="eyebrow">Alur Pengolahan</span>
+          <h2>Dari Data Mentah Ke WebGIS</h2>
+          <p>Metodologi ini menjelaskan bagaimana data OpenStreetMap, GADM, rute OSRM, dan data indikatif banjir diproses menjadi layer yang siap tampil di Leaflet.</p>
+        </div>
+      </section>
+
+      <section class="data-grid">
+        <article class="panel data-panel">
+          <h3>Data Dasar</h3>
+          <ol class="method-list">
+            <li>Batas kecamatan diambil dari GADM level 3 dan difilter untuk Kota Bandar Lampung.</li>
+            <li>Jalan, sungai/drainase, dan bangunan diunduh dari OpenStreetMap melalui Overpass Turbo.</li>
+            <li>Seluruh layer disimpan sebagai GeoJSON dengan koordinat WGS 84 agar kompatibel dengan Leaflet.</li>
+          </ol>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Pengolahan Tematik</h3>
+          <ol class="method-list">
+            <li>Footprint bangunan diagregasi menjadi zona kepadatan permukiman agar ukuran data tetap ringan.</li>
+            <li>Rute evakuasi dibuat menggunakan OSRM supaya garis mengikuti jaringan jalan asli.</li>
+            <li>Area genangan dibersihkan dari duplikasi dan dihaluskan visual agar tampil lebih natural di peta.</li>
+          </ol>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Aturan Prioritas</h3>
+          <ol class="method-list">
+            <li>Prioritas evakuasi diturunkan dari kedalaman genangan, risiko, dan deskripsi dampak.</li>
+            <li>Rute tertutup ditandai jika wilayah asal memiliki genangan sangat tinggi.</li>
+            <li>Rute terbatas dipakai untuk wilayah yang masih dapat dilalui dengan syarat kendaraan/sarana tertentu.</li>
+          </ol>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Validasi Yang Dibutuhkan</h3>
+          <ol class="method-list">
+            <li>Data genangan sebaiknya diganti dengan InaRISK, BPBD, atau hasil analisis DEM jika tersedia.</li>
+            <li>Posko, sarana, dan warga prioritas wajib diverifikasi dengan data lapangan.</li>
+            <li>Status rute perlu diperbarui sesuai kondisi aktual saat kejadian banjir.</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <strong>SIGMA Flood</strong>
+      <span>Prototype WebGIS Mitigasi Banjir Kota Bandar Lampung. Data OSM, OSRM, GADM, dan data indikatif; bukan sistem resmi untuk operasi darurat.</span>
+    </footer>
+  </div>
+</body>
+</html>

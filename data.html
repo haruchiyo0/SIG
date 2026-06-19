@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data & Metodologi | SIGMA Flood</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app data-app">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <h1>SIGMA Flood</h1>
+          <p>Data, sumber, dan metodologi WebGIS mitigasi banjir</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a class="nav-link" href="index.html">Peta</a>
+          <a class="nav-link active" href="data.html">Data</a>
+          <a class="nav-link" href="metodologi.html">Metodologi</a>
+          <a class="nav-link" href="tabel.html">Tabel</a>
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="data-page">
+      <section class="data-hero">
+        <div>
+          <span class="eyebrow">Data & Sumber</span>
+          <h2>Ringkasan Dataset</h2>
+          <p>Halaman ini menjelaskan jenis data yang digunakan, sumbernya, dan status kepercayaannya dalam dashboard SIGMA Flood.</p>
+        </div>
+        <div class="data-kpi-grid" id="dataKpis"></div>
+      </section>
+
+      <section class="data-grid">
+        <article class="panel data-panel">
+          <h3>Sumber Data</h3>
+          <div class="source-table">
+            <div><strong>Batas kecamatan</strong><span>GADM 4.1, difilter untuk Bandar Lampung.</span></div>
+            <div><strong>Jalan</strong><span>OpenStreetMap via Overpass Turbo.</span></div>
+            <div><strong>Routing</strong><span>OSRM berbasis jaringan jalan OpenStreetMap.</span></div>
+            <div><strong>Sungai/drainase</strong><span>OpenStreetMap via Overpass Turbo.</span></div>
+            <div><strong>Kepadatan permukiman</strong><span>Agregasi grid dari footprint bangunan OSM.</span></div>
+            <div><strong>Genangan</strong><span>Polygon prototype yang sudah dibersihkan dan dihaluskan visual.</span></div>
+            <div><strong>Prioritas, posko, sarana</strong><span>Indikatif untuk skenario prototype, perlu verifikasi lapangan.</span></div>
+          </div>
+        </article>
+
+        <article class="panel data-panel">
+          <h3>Status Kepercayaan</h3>
+          <div class="source-table">
+            <div><strong>Lebih kuat</strong><span>Batas kecamatan, jalan, sungai, bangunan, dan routing berbasis data terbuka eksternal.</span></div>
+            <div><strong>Indikatif</strong><span>Genangan, posko, sarana, dan prioritas evakuasi masih disusun untuk kebutuhan prototype.</span></div>
+            <div><strong>Perlu verifikasi</strong><span>Status rute aman/terbatas/tertutup harus dicek ulang terhadap kondisi banjir aktual.</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel data-panel">
+        <div class="table-heading">
+          <div>
+            <span class="eyebrow">Inventaris</span>
+            <h3>Daftar Dataset</h3>
+          </div>
+          <input class="table-search" id="tableSearch" type="search" placeholder="Cari dataset atau status" />
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Dataset</th>
+                <th>Jumlah</th>
+                <th>Sumber</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="datasetRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel data-panel caveat-panel">
+        <h3>Catatan Keterbatasan</h3>
+        <p>Halaman ini membedakan data yang berasal dari sumber terbuka dengan data indikatif. Untuk detail proses pengolahan, buka halaman Metodologi. Untuk melihat daftar rute dan prioritas, buka halaman Tabel.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <strong>SIGMA Flood</strong>
+      <span>Prototype WebGIS Mitigasi Banjir Kota Bandar Lampung. Data OSM, OSRM, GADM, dan data indikatif; bukan sistem resmi untuk operasi darurat.</span>
+    </footer>
+  </div>
+  <script src="data-page.js"></script>
+</body>
+</html>

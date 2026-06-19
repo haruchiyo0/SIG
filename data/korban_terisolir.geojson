@@ -1,57 +1,308 @@
 {
   "type": "FeatureCollection",
+  "name": "titik_prioritas_evakuasi_berbasis_genangan",
+  "metadata": {
+    "status_data": "Indikatif / estimasi prioritas evakuasi",
+    "catatan": "Titik dibuat dari centroid area genangan unik. Jumlah_korban adalah estimasi warga prioritas evakuasi untuk kebutuhan prototype, bukan data korban resmi.",
+    "tanggal_penyusunan": "2026-06-19"
+  },
   "features": [
     {
       "type": "Feature",
       "properties": {
-        "lokasi": "Pesawahan",
+        "id_titik": "TE-001",
+        "lokasi": "sukarame",
+        "kecamatan": "sukarame",
+        "jumlah_korban": 26,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 65,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Kendaraan tinggi, monitoring, dan bantuan logistik",
+        "dampak_sumber": "ratusaan rumah dan lebih dari seribu jiwa terdampak, sehingga area perlu diprioritaskan dalam pemetaan evakuasi",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.299089,
+          -5.383731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-002",
+        "lokasi": "Bumi Waras",
+        "kecamatan": "Bumi Waras",
+        "jumlah_korban": 42,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 90,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Perahu karet, evakuasi lansia/anak, dan posko darurat",
+        "dampak_sumber": "Ribuan rumah terdampak banjir, akses pemukiman terganggu, dan wilayah menjadi prioritas penanganan evakuasi",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.288275,
+          -5.443605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-003",
+        "lokasi": "Panjang",
+        "kecamatan": "Panjang",
+        "jumlah_korban": 20,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 90,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Perahu karet, evakuasi lansia/anak, dan posko darurat",
+        "dampak_sumber": "Banyak rumah terdampak banjir, sejumlah akses jalan dan kawasan permukiman tergnggu, serta membutuhkan penanganan cepat",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.327001,
+          -5.47806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-004",
+        "lokasi": "Teluk Betung Timur",
+        "kecamatan": "Teluk Betung Timur",
+        "jumlah_korban": 42,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 85,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Perahu karet, evakuasi lansia/anak, dan posko darurat",
+        "dampak_sumber": "Ribuan rumah terdampak banjir, permukiman padat mengalami genangan, dan akses warga terganggu.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.255757,
+          -5.468509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-005",
+        "lokasi": "Teluk Betung Selatan",
         "kecamatan": "Teluk Betung Selatan",
-        "jumlah_korban": 12,
+        "jumlah_korban": 38,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
         "genangan_cm": 80,
         "prioritas": "Tinggi",
-        "kebutuhan": "Perahu karet dan evakuasi lansia"
+        "kebutuhan": "Perahu karet/kendaraan tinggi dan bantuan logistik",
+        "dampak_sumber": "Ribuan rumah terdampak, aktivitas warga terganggu, dan sebagian wilayah membutuhkan pemantauan evakuasi.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          105.262,
-          -5.446
+          105.301131,
+          -5.4507
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "lokasi": "Kedaton",
-        "kecamatan": "Kedaton",
-        "jumlah_korban": 7,
-        "genangan_cm": 60,
-        "prioritas": "Sedang",
-        "kebutuhan": "Bantuan logistik dan kendaraan tinggi"
+        "id_titik": "TE-006",
+        "lokasi": "Kedamaian",
+        "kecamatan": "Kedamaian",
+        "jumlah_korban": 26,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 65,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Kendaraan tinggi, monitoring, dan bantuan logistik",
+        "dampak_sumber": "Ratusan rumah terdampak dan lebih dari seribu jiwa terdampak, sehingga area perlu diprioritaskan dalam pemetaan evakuasi.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          105.2588,
-          -5.3821
+          105.286743,
+          -5.399833
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
+        "id_titik": "TE-007",
         "lokasi": "Rajabasa",
         "kecamatan": "Rajabasa",
-        "jumlah_korban": 3,
-        "genangan_cm": 40,
-        "prioritas": "Sedang",
-        "kebutuhan": "Monitoring dan bantuan logistik"
+        "jumlah_korban": 26,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 60,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Kendaraan tinggi, monitoring, dan bantuan logistik",
+        "dampak_sumber": "Ratusan rumah dan lebih dari seribu jiwa terdampak, genangan mengganggu aktivitas warga dan akses lingkungan.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          105.2401,
-          -5.3642
+          105.236713,
+          -5.3672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-008",
+        "lokasi": "Kedaton",
+        "kecamatan": "Kedaton",
+        "jumlah_korban": 12,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 60,
+        "prioritas": "Tinggi",
+        "kebutuhan": "Kendaraan tinggi, monitoring, dan bantuan logistik",
+        "dampak_sumber": "Jalan raya tergenang, akses warga terganggu, dan sebagian warga membutuhkan penanganan atau evakuasi.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.258096,
+          -5.399267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-009",
+        "lokasi": "Tanjung Senang",
+        "kecamatan": "Tanjung Senang",
+        "jumlah_korban": 14,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 55,
+        "prioritas": "Sedang",
+        "kebutuhan": "Kendaraan tinggi, monitoring, dan bantuan logistik",
+        "dampak_sumber": "Ratusan rumah terdampak banjir, akses lingkungan terganggu, dan perlu pemantauan lanjutan.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.281477,
+          -5.358871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-010",
+        "lokasi": "Sukabumi",
+        "kecamatan": "Sukabumi",
+        "jumlah_korban": 8,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 55,
+        "prioritas": "Sedang",
+        "kebutuhan": "Kendaraan tinggi, monitoring, dan bantuan logistik",
+        "dampak_sumber": "Beberapa kelurahan terdampak banjir, rumah warga tergenang, dan mobilitas warga terganggu.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.309158,
+          -5.402042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-011",
+        "lokasi": "Labuhan Ratu",
+        "kecamatan": "Labuhan Ratu",
+        "jumlah_korban": 8,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 50,
+        "prioritas": "Sedang",
+        "kebutuhan": "Monitoring dan bantuan dasar",
+        "dampak_sumber": "Sejumlah rumah terdampak banjir, genangan mengganggu akses warga di beberapa titik.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.257028,
+          -5.379367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-012",
+        "lokasi": "Enggal",
+        "kecamatan": "Enggal",
+        "jumlah_korban": 14,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 45,
+        "prioritas": "Sedang",
+        "kebutuhan": "Monitoring dan bantuan dasar",
+        "dampak_sumber": "Ratusan rumah terdampak banjir dan aktivitas warga terganggu pada area genangan lokal.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.261232,
+          -5.418489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_titik": "TE-013",
+        "lokasi": "Tanjung Karang Timur",
+        "kecamatan": "Tanjung Karang Timur",
+        "jumlah_korban": 8,
+        "jenis_data": "Estimasi warga prioritas evakuasi",
+        "genangan_cm": 45,
+        "prioritas": "Sedang",
+        "kebutuhan": "Monitoring dan bantuan dasar",
+        "dampak_sumber": "Rumah warga terdampak banjir, akses jalan lokal terganggu, dan perlu pemantauan drainase.",
+        "sumber_data": "Diturunkan dari genangan_banjir.geojson berdasarkan lokasi, kedalaman, risiko, dan dampak",
+        "status_data": "Indikatif untuk prototype; bukan data korban resmi BPBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.266124,
+          -5.402663
         ]
       }
     }

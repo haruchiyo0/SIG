@@ -1,14 +1,27 @@
 {
   "type": "FeatureCollection",
+  "name": "alat_berat_dan_sarana_evakuasi_indikatif",
+  "metadata": {
+    "wilayah": "Kota Bandar Lampung",
+    "status_data": "Indikatif / simulasi operasional",
+    "catatan": "Data ini disusun untuk prototype SIG banjir berdasarkan area genangan prioritas pada dataset, pola kebutuhan evakuasi banjir, dan asumsi penempatan sarana di sekitar posko. Titik, jumlah, dan kontak wajib diverifikasi ke BPBD/instansi terkait sebelum dipakai untuk operasi nyata.",
+    "tanggal_penyusunan": "2026-06-19"
+  },
   "features": [
     {
       "type": "Feature",
       "properties": {
+        "id_alat": "AB-001",
         "jenis": "Excavator",
+        "kategori": "Alat berat",
         "jumlah": 2,
-        "status": "Tersedia",
+        "status": "Siaga",
         "posko": "Posko Teluk Betung",
-        "kontak": "08xx-xxxx-0001"
+        "wilayah_layanan": "Teluk Betung Selatan, Teluk Betung Timur, Bumi Waras",
+        "fungsi": "Membuka akses jalan, membersihkan material, membantu normalisasi saluran darurat",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Indikatif berbasis kebutuhan area genangan prioritas; bukan data resmi",
+        "tingkat_kepercayaan": "Rendah - perlu verifikasi lapangan"
       },
       "geometry": {
         "type": "Point",
@@ -21,11 +34,40 @@
     {
       "type": "Feature",
       "properties": {
+        "id_alat": "AB-002",
+        "jenis": "Perahu Karet",
+        "kategori": "Sarana evakuasi",
+        "jumlah": 4,
+        "status": "Siaga",
+        "posko": "Posko Kedaton",
+        "wilayah_layanan": "Kedaton, Labuhan Ratu, Way Halim",
+        "fungsi": "Evakuasi warga dari permukiman tergenang dan distribusi logistik ringan",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Indikatif berbasis kebutuhan area genangan prioritas; bukan data resmi",
+        "tingkat_kepercayaan": "Rendah - perlu verifikasi lapangan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.267,
+          -5.391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_alat": "AB-003",
         "jenis": "Dump Truck",
+        "kategori": "Kendaraan pendukung",
         "jumlah": 3,
-        "status": "Tersedia",
+        "status": "Siaga",
         "posko": "Posko Rajabasa",
-        "kontak": "08xx-xxxx-0002"
+        "wilayah_layanan": "Rajabasa, Tanjung Senang",
+        "fungsi": "Mobilisasi personel, material tanggul darurat, dan logistik berat",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Indikatif berbasis kebutuhan area genangan prioritas; bukan data resmi",
+        "tingkat_kepercayaan": "Rendah - perlu verifikasi lapangan"
       },
       "geometry": {
         "type": "Point",
@@ -38,17 +80,69 @@
     {
       "type": "Feature",
       "properties": {
-        "jenis": "Perahu Karet",
-        "jumlah": 4,
-        "status": "Tersedia",
-        "posko": "Posko Kedaton",
-        "kontak": "08xx-xxxx-0003"
+        "id_alat": "AB-004",
+        "jenis": "Mobil Rescue",
+        "kategori": "Kendaraan evakuasi",
+        "jumlah": 2,
+        "status": "Siaga",
+        "posko": "Posko Sukarame",
+        "wilayah_layanan": "Sukarame, Sukabumi, Kedamaian",
+        "fungsi": "Respons cepat, evakuasi darat, dan pengantaran kebutuhan darurat",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Indikatif berbasis kebutuhan area genangan prioritas; bukan data resmi",
+        "tingkat_kepercayaan": "Rendah - perlu verifikasi lapangan"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          105.267,
-          -5.391
+          105.306,
+          -5.393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_alat": "AB-005",
+        "jenis": "Pompa Air Portable",
+        "kategori": "Peralatan penanganan genangan",
+        "jumlah": 5,
+        "status": "Siaga",
+        "posko": "Posko Bumi Waras",
+        "wilayah_layanan": "Bumi Waras, Panjang, Teluk Betung Selatan",
+        "fungsi": "Penyedotan genangan lokal di titik permukiman dan akses jalan",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Indikatif berbasis kebutuhan area genangan prioritas; bukan data resmi",
+        "tingkat_kepercayaan": "Rendah - perlu verifikasi lapangan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.289,
+          -5.445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_alat": "AB-006",
+        "jenis": "Loader Mini",
+        "kategori": "Alat berat ringan",
+        "jumlah": 1,
+        "status": "Siaga terbatas",
+        "posko": "Posko Panjang",
+        "wilayah_layanan": "Panjang dan kawasan pesisir terdampak",
+        "fungsi": "Pembersihan material ringan dan dukungan pembukaan akses lokal",
+        "kontak": "BPBD/Posko setempat",
+        "sumber_data": "Indikatif berbasis kebutuhan area genangan prioritas; bukan data resmi",
+        "tingkat_kepercayaan": "Rendah - perlu verifikasi lapangan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.326,
+          -5.502
         ]
       }
     }
